@@ -1,0 +1,30 @@
+html{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
+}
+
+ol {
+    text-align: left;
+    counter-reset: list;
+  }
+  ol > li {
+    list-style: none;
+  }
+  ol > li:before {
+    content: counter(list) ") ";
+    counter-increment: list;
+  }
+
+.column{
+    width: 50%;
+    float: left;
+}
